@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dpdm</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+  
+  <!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="nav-brand">
+    <img src="./assets/IIITB_logo_with_Institute_Name_png.png" alt="IIITB Logo" class="logo">
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#batch">Batch '25</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+  </ul>
+
+  <button class="recruit-btn"><a href="#contact">Recruit Us →</a></button>
+
+  <!-- Hamburger Icon for Mobile -->
+  <div class="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+  <a href="#">Home</a>
+  <a href="#about">About</a>
+  <a href="#batch">Batch '25</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Recruit Us</a>
+</div>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+  });
+</script>
+
+
+  <header class="intro">
+    <div class="intro-slideshow">
+      <img src="./assets/hero4.JPG">
+      <img src="./assets/candid pics/GROUP_PIC4.JPG">
+      <img src="./assets/gallery/sports.JPG">
+      <img src="./assets/hero3.jpeg">
+      <img src="./assets/gallery/b.jpeg">
+      <img src="./assets/candid pics/GROUP_PIC3.jpeg">
+      <img src="./assets/gallery3.jpeg">
+      <img src="./assets/grp2.jpg">
+    </div>
+    <div class="intro-header">
+      <h1>Digital Product Design and Management</h1>
+      <p>Post Graduate Program 2024-25</p>
+      <!-- <p style="font-size: 16px; color: rgb(249, 249, 249);" >The Next Gen of Digital Product Leaders</p> -->
+    </div>
+
+    <div class="nav-buttons">
+      <button id="prev-btn">&#10094;</button>
+      <button id="next-btn">&#10095;</button>
+    </div>
+    <div class="dots">
+      <span class="dot" onclick="manualSlide(0)"></span>
+      <span class="dot" onclick="manualSlide(1)"></span>
+      <span class="dot" onclick="manualSlide(2)"></span>
+      <span class="dot" onclick="manualSlide(3)"></span>
+      <span class="dot" onclick="manualSlide(4)"></span>
+      <span class="dot" onclick="manualSlide(5)"></span>
+      <span class="dot" onclick="manualSlide(6)"></span>
+      <span class="dot" onclick="manualSlide(7)"></span>
+      
+     
+      <!-- Add dots for each image -->
+    </div>
+    
+  </header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Digital Product Design and Management</h1>
+      <h3>Post Graduate Program 2024-25</h3>
+      <p>The Next Gen of Digital Product Leaders</p>
+      <div class="hero-buttons">
+        <button class="primary-btn"><a href="#batch">👥 Meet Our Batch</a></button>
+        <a href="./assets/PGP 2024-25 BATCH PROFILE.pdf" download="PGP 2024-25 BATCH PROFILE"><button class="secondary-btn" type="button">⬇️ Download Brochure</button></a>
+      </div>
+    </div>
+    <div class="carousel">
+      <img src="./assets/panel-discussion.JPG" >
+    </div>
+  </section>
+
+<!-- About Section -->
+<section class="about-program" id="about">
+  <div class="container">
+    <h2 class="section-title">About Our Program</h2>
+    <hr class="divider2">
+    <h3 class="section-subtitle">Enabling Product Innovations for Real-World Impact</h3>
+    <p class="section-description">
+      PGP In Digital Product Design & Management program is crafted to nurture the next generation of product leaders.
+      Through a blend of theoretical knowledge and hands-on experience, we empower students to tackle real-world
+      challenges in the digital product space.
+    </p>
+    <div class="stats-container">
+      <div class="stat-box">
+        <span class="stat-number">30</span>
+        <p class="stat-label">Enthusiastic Students</p>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number">50+</span>
+        <p class="stat-label">Projects</p>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number">10+</span>
+        <p class="stat-label">Experienced Faculty</p>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number">14+</span>
+        <p class="stat-label">Industry Relevant Courses</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Curriculum Highlights Section -->
+<section class="curriculum-highlights">
+  <div class="container">
+    <h2 class="section-title">Curriculum Highlights</h2>
+    <hr class="divider2">
+    <div class="highlights-container">
+      <div class="highlight-box">
+        <div class="highlight-icon">🎨</div>
+        <h3 class="highlight-title">UX Design</h3>
+        <p class="highlight-description">Master the art of creating intuitive and impactful user experiences.</p>
+      </div>
+      <div class="highlight-box">
+        <div class="highlight-icon">📊</div>
+        <h3 class="highlight-title">Product Strategy</h3>
+        <p class="highlight-description">Learn to develop and execute successful product strategies.</p>
+      </div>
+      <div class="highlight-box">
+        <div class="highlight-icon">👥</div>
+        <h3 class="highlight-title">User Research</h3>
+        <p class="highlight-description">Understand user needs through advanced research methodologies.</p>
+      </div>
+      <div class="highlight-box">
+        <div class="highlight-icon">📝</div>
+        <h3 class="highlight-title">Product Management</h3>
+        <p class="highlight-description">Develop skills to lead product teams and drive innovation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- directors message -->
+ <div class="dir">
+<section class="directors-message">
+  <h2 class="title" style="color: black;">Director's Message</h2>
+  <div class="message-card">
+    <p style="color: rgb(1, 71, 154);" class="quote">
+      "The PGP-DPDM programme addresses the evolving demands of the digital economy with a carefully designed interdisciplinary curriculum. It integrates the latest advancements in data analysis, user experience, and product management while fostering a deep understanding of social impact and inclusivity. This unique approach encourages students to tackle challenges from multiple perspectives, preparing them for leadership roles in the dynamic digital landscape."
+    </p>
+    <div class="director-info">
+      <img src="./assets/director.png" alt="Director Photo" class="director-photo">
+      <div>
+        <h3 class="director-name" style="color: black;">Dr. Debabrata Das</h3>
+        <p class="director-title">Director, IIITB</p>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+
+<!-- past recruiters -->
+ <div class="rec">
+<div class="section-header-past">IIIT-B Past Recruiters</div>
+    <hr class="divider3">
+    <div class="recruiters-container">
+
+      
+      <div class="recruiter-box">
+        <img src="./assets/recruiters/AMAZON.jpg" alt="Amazon">
+      </div>
+      <div class="recruiter-box">
+        <img src="./assets/recruiters/AMERICANEXPRESS.jpg" alt="American Express">
+      </div>
+      <div class="recruiter-box">
+        <img src="./assets/recruiters/ANZ.jpg" alt="ANZ">
+      </div>
+      <div class="recruiter-box">
+        <img src="./assets/recruiters/BOSCH.jpg" alt="Bosch">
+      </div>
+      
+      <div class="recruiter-box">
+        <img src="./assets/recruiters/CISCO.jpg" alt="Cisco">
+      </div>
+      <div class="recruiter-box">
+        <img src="./assets/recruiters/FLIPKART.jpg" alt="Flipkart">
+      </div>
+      <div class="recruiter-box">
+        <img src="./assets/recruiters/HSBC.jpg" alt="HSBC">
+      </div>
+      <div class="recruiter-box">
+        <img src="./assets/recruiters/IBM.jpg" alt="IBM">
+      </div>
+      <div class="recruiter-box">
+        <img src="./assets/recruiters/INFOSYS.jpg" alt="Infosys">
+      </div>
+      <div class="recruiter-box">
+        <img src="./assets/recruiters/INTUIT.jpg" alt="INTUIT">
+      </div>
+      <div class="recruiter-box">
+        <img src="./assets/recruiters/MICROSOFT.jpg" alt="Microsoft">
+      </div>
+      <div class="recruiter-box">
+        <img src="./assets/recruiters/Mongan stanley.jpg" alt="Morgan Stanley">
+      </div>
+      <div class="recruiter-box">
+        <img src="./assets/recruiters/NETAPP.jpg" alt="NETAPP">
+      </div>
+      <div class="recruiter-box">
+        <img src="./assets/recruiters/QUALCOMM.jpg" alt="QUALCOMM">
+      </div>
+      <div class="recruiter-box">
+        <img src="./assets/recruiters/SAMSUNG.jpg" alt="SAMSUNG">
+      </div>
+      <div class="recruiter-box">
+        <img src="./assets/recruiters/SAP.jpg" alt="SAP">
+      </div>
+      <div class="recruiter-box">
+        <img src="./assets/recruiters/WD.jpg" alt="WD">
+      </div>
+    </div>
+  </section><br><br><br>
+  </div>
+<!-- meet our batch -->
+ <div class="aa">
+<section class="sectiona" id="batch">
+  <h1 class="section-titlea">Meet Our Batch</h1>
+  <hr class="divider2"><br><br>
+
+
+  <div class="cards-containera">
+    <!-- Bachelors' Discipline -->
+    <div class="card">
+      <h2>Bachelors' Discipline</h2><br><br>
+      <canvas id="disciplineChart" class="chart"></canvas>
+    </div>
+    
+    <!-- Work Experience Profile -->
+    <div class="card">
+      <h2>Work Experience Profile</h2><br><br>
+      <canvas id="experienceChart" class="chart"></canvas>
+    </div>
+
+    <!-- Faculty to Student Ratio -->
+    <div class="card">
+      <h2>Faculty to Student Ratio</h2><br><br>
+      <div class="ratio-box" style="color: aliceblue;">Faculties: 10</div>
+      <div class="ratio-box" style="color: aliceblue;" >Students: 30</div>
+      <div class="ratio-box" style="color: aliceblue;">Ratio: 1:3</div>
+    </div>
+
+    <!-- Gender Percentage -->
+    <div class="card">
+      <h2>Gender Percentage</h2><br><br>
+      <canvas id="genderChart" class="chart"></canvas>
+    </div>
+  </div>
+</section></div>
+
+<!-- profilesss -->
+<section class="student-profiles">
+  <h2 class="title">Meet Our Aspiring Product Managers</h2>
+
+  <!-- Search and Filter Controls -->
+  <div class="filters">
+    <input type="text" id="searchInput" placeholder="🔍 Search by name or skills" onkeyup="filterAndSortProfiles()">
+    <div class="buttons">
+      <button onclick="filterBySkill('All')" class="active">All</button>
+      <button onclick="filterBySkill('Design')">UX Design</button>
+      <button onclick="filterBySkill('Product')">Product</button>
+      <button onclick="filterBySkill('Research')">Research</button>
+    
+    </div>
+  </div>
+
+  <!-- Profile Cards -->
+  <div class="profiles-container" id="profilesContainer"></div>
+</section>
+
+<!-- gallery -->
+ <div class="gall">
+  
+<div class="wrapper">
+  <h1 style="color: rgb(1, 71, 154); font-size: 40px;">GALLERY</h1><BR><BR>
+
+  <section class="gallery" id="gallery">
+    <button id="gallery-main-img" type="button" class="gallery-main-img"><img src="./assets/gall_front.png" alt=". "></button>
+    <div id="gallery-thumbs" class="gallery-thumbs"><!-- thumnails loaded here --></div>
+  </section>
+
+ 
+</div> 
+  
+  <dialog id="slider-dialog">
+    <section class="slider-wrapper">
+      <button type="button" btn-slider="prev" id="btn-prev">&lsaquo;</button>
+      <button type="button" btn-slider="next" >&rsaquo;</button>
+      <div class="slider-content">
+        <div id="slider" class="slider"><!-- slideshow images loaded here --></div>
+      </div>
+    </section>
+    <button id="btn-dialog-close" class="btn-dialog-close">&#10005;</button>
+</dialog>
+ </div>
+
+
+ <!-- recruit section  -->
+<div class="rec1" id="contact">
+ <div class="recruit-section">
+  <h2>Join hands with the best talent from our batch</h2>
+  <button class="recruit-btn" >
+   <a href="./form.html"> Click to Recruit</a> <span>➔</span>
+  </button>
+
+  <div class="contact-info">
+    <div class="contact-card">
+      <h4>📧 Email Us</h4>
+      <p>placements.pgp@iiitb.ac.in</p>
+    </div>
+    <div class="contact-card">
+      <h4>📞 Call Us</h4>
+      <p>+91 9986668421</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- footer -->
+<div style="height: 200px;"> </div>
+<div class="spectacledcoder-footer">
+    <div class="spectacledcoder-footer-top">
+
+    </div>
+    <div class="spectacledcoder-footer-content">
+        <div class="spectacledcoder-footer-section">
+            <h1 class="spectacledcoder-footer-heading">IIIT-B Digital Product Design and Management</h1><br>
+            <p>&nbsp;&nbsp;&nbsp;Shaping the future of digital products</p>
+        </div>
+        <div class="spectacledcoder-footer-section">
+            <ul class="d-footer-ul" style="padding-left:50px ;"><br>
+                <li class="d-footer-li-h" style="padding-bottom:6px ;"><b>Quick Links</b></li>
+                <li class="d-footer-li"><a href="#">Home</a></li>
+                <li class="d-footer-li"><a href="#about">About</a></li>
+            </ul>
+        </div>
+        <div class="spectacledcoder-footer-section">
+            <ul class="d-footer-ul" style="padding-left:100px ;">
+              <br><br>
+                <li class="d-footer-li-h"><b>Resources</b></li>
+                <li class="d-footer-li"><a href="#batch">Batch Profile</a></li>
+                <li class="d-footer-li"><a href="#gallery">Gallery</a></li>
+                <li class="d-footer-li"><a href="#contact">Contact</a></li>
+        
+            </ul>
+        </div>
+        <div class="spectacledcoder-footer-section">
+            <ul class="d-footer-ul">
+                
+            </ul>
+        </div>
+        <div class="spectacledcoder-footer-section">
+            <div class="logo-head">
+                <b style="padding-bottom: 10px ;">Follow us on</b>
+            </div>
+            <div class="logo">
+               <a href="https://www.instagram.com/mandes_iiitb?igsh=Znl6czVhZTA1ZGlm" target="_blank"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/100/instagram-new.png" alt="instagram-new"/></a>
+               <a href="https://www.linkedin.com/showcase/iiit-bangalore-pg-programme-in-digital-product-design-and-management-pgpdpdm/posts/?feedView=all" target="_blank"><img width="30" height="30" src="./assets/icons8-linkedin-24.png" alt="LinkedIn"/></a>
+            </div>    
+        </div>
+    </div>
+    <div class="spectacledcoder-footer-bottom">
+        <div class="spectacledcoder-footer-bottom-sec">
+        </div>
+        <div class="spectacledcoder-footer-bottom-sec">
+            <p>© 2025 Digital Product Design & Management. All rights reserved.</p>
+        </div>
+        <div class="spectacledcoder-footer-bottom-sec">
+        </div>
+        
+    </div>
+    
+</div>
+<!-- footer ends -->
+
+
+
+
+
+
+
+<script>
+  // Master list of profiles
+  const profilesData = [
+    {
+      name: "Abhigyan Saksham Rai",
+      skills: ["Market Research","Decision Making"],
+      aspiringTitle: "Aspiring Product Manager",
+      description: "Former Product Analyst with 2.5 years of experience in product and program management, focused on AI, Web 3.0, invehicle digital products, and connected car programs. Aspiring to harness my knowledge and skills to solve customer problems and advance in product management",
+      image: "assets/profiles/abhigyanrai.jpg",
+      linkedin: "https://www.linkedin.com/in/abhigyan-saksham-rai/"
+    },
+    {
+      name: "Abhinandhan I",
+      skills: ["Product Design", "Creative Problem Solving", "Management", "UX Design"],
+      aspiringTitle: "Aspiring Product Manager",
+      description: "A generalist with skills ranging from strategic thinking, creative problem solving to interpersonal skills with over 3 years of experience in UX/UI design, looking to transition into product management to shape intuitive and impactful products.",
+      image: "assets/profiles/abinandhan.jpg",
+      linkedin: "https://www.linkedin.com/in/uxer96"
+    },
+    {
+      name: "Aditi R K",
+      skills: ["Product Thinking", "User Research",],
+      aspiringTitle: "Aspiring Product Manager",
+      description: " A Computer Science graduate aspiring to become a product manager, committed to leveraging my strong technical foundation to drive product innovation and create user centred solutions. Looking to integrate my technical expertise with strategic insight to develop impactful and intuitive products.",
+      image: "assets/profiles/aditirk.jpg",
+      linkedin: "https://www.linkedin.com/in/aditi-rk?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },      
+    {
+      name: "Aiswarya Manoj",
+      skills: ["Product Stratergy", "User Experience", "Product Design"],
+      aspiringTitle: "Aspiring Product Manager",
+      description: "BA graduate with two years of experience in  management. Aiming to combine my interest in product design and my background in English literature with specialization in journalism to transition into management digital product",
+      image: "assets/profiles/aiswaryamanoj.jpg",
+      linkedin: "www.linkedin.com/in/aiswarya-manoj-6a65171b5"
+    },
+    {
+      name: "Akanksh Joshi",
+      skills: ["Web Development", "Decision Making"],
+      aspiringTitle: "Aspiring Product Manager",
+      description: "Aspiring technical product manager running companies Enord and WNS, with added experience in front-end development. Passionate about creating user-driven solutions through intuitive designs. ",
+      image: "assets/profiles/akankshajoshi.jpg",
+      linkedin: "https://www.linkedin.com/in/akanksh-joshi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      name: "Alina Abhishdesai",
+      skills: ["Product Management", "User Research", "Product Design"],
+      aspiringTitle: "Aspiring Product Designer",
+      description: "Dedicated to designing digital products that make a meaningful difference. Aiming to blend psychology, management, and design principles,  to create user experiences that are both engaging and effective. ",
+      image: "assets/profiles/alinadesai.jpg",
+      linkedin: "https://www.linkedin.com/in/alinadesai16/"
+    },{
+      name: "Ashutosh Vaish",
+      skills: ["Product Management", "Data Analysis", "Product Design", "Problem Solving"],
+      aspiringTitle: "Aspiring Product Manager",
+      description: " A Computer Science graduate with a strong foundation in technology and work experience in education and the CEO’s office at a startup. Looking to transition to management. software product",
+      image: "assets/profiles/ashutoshvaish.jpg",
+      linkedin: "https://www.linkedin.com/in/vaishashutosh/"
+    },{
+      name: "Balabomma Chandana",
+      skills: ["Product Management", "Strategic Leadership", "Product Design","Analytical Adaptability"],
+      aspiringTitle: "Aspiring Product Manager",
+      description: "Visually impaired professional, passionate about accessible digital product design, management, and data analysis.",
+      image: "assets/profiles/chandanabalabomma.jpg",
+      linkedin: "www.linkedin.com/in/chandanabalabomma"
+    },
+    {
+      name: "Chandrakiran HJ",
+      skills: ["Product Management", "User Experience", "Understanding Users","Strategy"],
+      aspiringTitle: "Product Enthusiast",
+      description: " A curious and driven product enthusiast, exploring innovative digital solutions in diverse domains like construction, fitness, and fintech. Passionate about designing impactful products, solving real-world problems, and creating meaningful user experiences.",
+      image: "assets/profiles/chandrakiranhj.jpg",
+      linkedin: "https://www.linkedin.com/in/chandrakiran-hj-835b65196/"
+    },{
+      name: "Divya Darshini",
+      skills: ["Product Management", "User Research", "Product Strategy"],
+      aspiringTitle: "Aspiring Product Manager",
+      description: "Aspiring Product Manager with a background in Marketing and Finance, passionate about creating innovative solutions to enhance user experiences and accessibility.",
+      image: "assets/profiles/divyadarshini.jpg",
+      linkedin: "https://www.linkedin.com/in/divya-darshini-s-b8aa46230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },{
+      name: "Jaskirat Singhsanghera",
+      skills: ["Product Strategy", "User Experience", "Product Design", "Marketing"],
+      aspiringTitle: "Aspiring Polymath",
+      description: "A curious designer looking to build forgettable designs and memorable experiences.",
+      image: "assets/profiles/jaskiratsingh.jpg",
+      linkedin: "linkedin.com/in/sangherajaskirat"
+    },{
+      name: "Kamitikar Hemanth",
+      skills: ["Product Management", "Analytical Problem Solving", "Product Design","Decision Making"],
+      aspiringTitle: "Aspiring Product Manager",
+      description: "Visually impaired MBA finance graduate and digital product design student, seeking a product manager role to integrate my skills and focus on accessibility",
+      image: "assets/profiles/kamitikarhemant.jpg",
+      linkedin: "https://linkedin.com/in/hemanth-kamitikar-331328250"
+    },
+    {
+      name: "Mainak Sengupta",
+      skills: ["Product Management", "Strategic Analysis", "Market Research"],
+      aspiringTitle: "Aspiring Product Manager",
+      description: "Experienced IT and Strategy consultant, adept at delivering strategic insights and solutions. Transitioning to product design and management to combine strategic thinking with creative innovation, focusing on user-driven solutions.",
+      image: "assets/profiles/mainaksengupta.jpg",
+      linkedin: "https://www.linkedin.com/in/mainak-sengupta007/"
+    },
+    {
+      name: "Malavika Suresh",
+      skills: ["Product Management", "User Research", "Design Thinking"],
+      aspiringTitle: "Aspiring UI Designer",
+      description: " Urban design graduate passionate about curating unique, digital spaces one font at a time. Interested in understanding the public as a larger, singular user while creating designs that cater to each individual’s needs. ",
+      image: "assets/profiles/malavikas.jpg",
+      linkedin: "https://www.linkedin.com/in/malavika-suresh-40642a293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      name: "Manish Kumar",
+      skills: ["Product Management", "Financial Analysis", "Product Strategy"],
+      aspiringTitle: "Aspiring Product Manager",
+      description: "Former banker transitioning to product management, blending analytical rigour with strategic insight. Skilled in financial analysis, data-driven decision-making, and customer-centric innovation",
+      image: "assets/profiles/manishkumar.jpg",
+      linkedin: "https://www.linkedin.com/in/manish-kumar-635498176"
+    },
+    {
+      name: "Nagraj Patil",
+      skills: ["Product Management", "Operations", "Market Research"],
+      aspiringTitle: "Aspiring Product Manager",
+      description: "Aspiring Product Manager and natural farming entrepreneur; management, adept project management, and data analysis. Passionate about product management with a focus on at continuous improvement, supported by Agile methodologies like Kanban and Scrum.",
+      image: "assets/profiles/nagarajpatil.jpg",
+      linkedin: "https://www.linkedin.com/in/nagaraj-patil-840b25136?trk=contact-info"
+    },
+    {
+      name: "Pallavi Bhatt",
+      skills: ["Product Management", "User Design", "Data Analysis"],
+      aspiringTitle: "Aspiring Product Manager",
+      description: " Passionate about crafting intuitive, research-driven user experiences, I combine design thinking and data insights to solve real-world problems. I write on UX, technology & innovation.",
+      image: "assets/profiles/pallavibhatt.jpg",
+      linkedin: "https://www.linkedin.com/in/pallavi-bhatt-542a17116/"
+    },
+    {
+      name: "Punyat Tripathi",
+      skills: ["Product Management", "Accessibility", "Product Development"],
+      aspiringTitle: "Aspiring Accessibility and Product Manager",
+      description: "As a skilled Software Developer and aspiring Product Manager, I specialize in research, design tools, web development, and software project management. Being Deaf gives me a unique perspective on accessibility, driving my passion for creating inclusive, user-friendly applications that empower everyone. ",
+      image: "assets/profiles/punyattripathi.jpg",
+      linkedin: "https://www.linkedin.com/in/punyatrips"
+    },
+    {
+      name: "Rahul Raj",
+      skills: ["Product Management", "User Design", "Product Design"],
+      aspiringTitle: "Aspiring Product Manager",
+      description: "Visionary innovator with strong analytical and leadership skills, passionate about driving innovation through user-focused design and data-driven strategies. Committed to creating impactful solutions by blending strategic insight with UX/UI expertise.",
+      image: "assets/profiles/rahulraj.png",
+      linkedin: "https://www.linkedin.com/in/rahul-raj-a5b9b8184"
+    },
+    {
+      name: "Renu T R",
+      skills: ["Product Management", "User Research", "Product Design"],
+      aspiringTitle: "Aspiring Product Manager",
+      description: " Experienced Programmer Analyst skilled in code enhancement, abend resolution, and technical documentation. Aspiring Product Manager, aiming to leverage expertise in management, analytics, and design thinking to develop impactful, user-centric solutions.",
+      image: "assets/profiles/renutr.jpg",
+      linkedin: "https://www.linkedin.com/in/renu-t-r-b116b5178/"
+    },
+    {
+      name: "Ritika Mehrotra",
+      skills: ["Product Management", "Problem Solving", "Product Design","Data Analysis"],
+      aspiringTitle: "Aspiring Program/Product Manager",
+      description: " A data science professional with skills in data analysis, machine learning as well as data-driven decision making. Aspiring to transition into product management, to drive product development and user centric innovative solutions of the future.",
+      image: "assets/profiles/ritikamehrotra.jpeg",
+      linkedin: "#"
+    },
+    {
+      name: "Rohan Robin Carlo",
+      skills: ["Product Management", "Active Listening", "Innovative Design Thinking"],
+      aspiringTitle: "Research Product Innovator",
+      description: "Elite Entrepreneur and top-notch designer driving impactful societal change through research and development.",
+      image: "assets/profiles/rohancarlo.jpg",
+      linkedin: "https://in.linkedin.com/in/rohan-carlo-840338268"
+    },
+    {
+      name: "Sanjana Shashidhar",
+      skills: ["Product Management", "User Design", "User Research"],
+      aspiringTitle: "Aspiring Product Designer",
+      description: " UI/UX designer with a strong foundation in educational content creation, dedicated to designing intuitive and user-centered digital products that simplify experiences meaningful interactions.",
+      image: "assets/profiles/sanjanashashidhar.jpg",
+      linkedin: "https://www.linkedin.com/in/sanjana-shashidhar-072650166/"
+    },
+    {
+      name: "Shivakant Singh",
+      skills: ["Product Management", "Community Advocacy", "Product Inclusion"],
+      aspiringTitle: "Aspiring Product Manager",
+      description: " Emerging product manager, focused on leading inclusive, accessible digital solutions. Passionate about making technology work for everyone.",
+      image: "assets/profiles/shivakantsingh.jpg",
+      linkedin: "https://www.linkedin.com/in/shivakant-singh-771749248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      name: "Shubham Handoo",
+      skills: ["Product Management", "Critical Thinking", "Stakeholder Management"],
+      aspiringTitle: "Aspiring Product Roles",
+      description: " Civil Engineering graduate with strong foundation in Project Mangement. Transitioning to product management to harness analytical skills and drive innovative solutions with engineering expertise & strategic thinking to deliver impactful products",
+      image: "assets/profiles/shubhamhandoo.jpg",
+      linkedin: "https://linkedin.com/in/shubham-handoo-783275184"
+    },
+    {
+      name: "Siva Sai Sagar",
+      skills: ["Product Management", "User Research", "Business Strategy"],
+      aspiringTitle: "Aspiring Product Manager",
+      description: " BBA graduate looking to begin a career in digital product management, assisting teams to develop intuitive and creative solutions. Proficient in developing strategy,process design, creating product roadmaps, and conducting user research",
+      image: "assets/profiles/sivakopparapu.jpg",
+      linkedin: "https://www.linkedin.com/in/sagar-kopparapu-6b5b3b2b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      name: "Sneha Singh",
+      skills: ["Product Management","User-Centered Design", "User Research"],
+      aspiringTitle: "Aspiring Product Designer",
+      description: " Curious design graduate with experience at a sustainable fashion startup and a love for all things creative . Currently on the hunt to create impactful and delightful digital experiences.",
+      image: "assets/profiles/snehasingh.jpg",
+      linkedin: "https://www.linkedin.com/in/sneha-singh-90393b19a"
+    },
+    {
+      name: "Sreejith N",
+      skills: ["Product Management", "Product strategy","Product Metric Analysis"],
+      aspiringTitle: "Aspiring Product Manager",
+      description: "An engineer aspiring to become a product manager in the IT sector, leveraging data driven decision-making and technical problem-solving skills. Passionate about driving product vision strategies for scalable solutions.",
+      image: "assets/profiles/sreejithn.jpg",
+      linkedin: "https://www.linkedin.com/in/sreejithn1999"
+    },
+    {
+      name: "Paurnnamy U",
+      skills: ["Product Management", "User Reseach", "Data Driven Solutions"],
+      aspiringTitle: "Aspiring Business Analyst",
+      description: " Blending research, analytics, and strategy to create solutions that drive business success and improve user experiences, with an emphasis on turning data insights into impactful, actionable results.",
+      image: "assets/profiles/upaurnnamy.jpg",
+      linkedin: "https://www.linkedin.com/in/paurnnamy?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+    },
+    {
+      name: "Vatsal Jindal",
+      skills: ["Product Management", "User Experience", "Strategy"],
+      aspiringTitle: "Aspiring Product Manager",
+      description: "Former Consultant with technical experience, aspiring to understand consumers, business and technology in a broad manner and deliver products that make users lives easier.",
+      image: "assets/profiles/vatsal.jpg",
+      linkedin: "https://www.linkedin.com/in/vatsal-651563303"
+    },
+    {
+      name: "wise",
+      skills: ["Product Management", "User Experience", "Product Design"],
+      aspiringTitle: "Aspiring Product Manager",
+      description: "Focused on Product Design and User Experience.",
+      image: "assets/profiles/wise.jpg",
+      linkedin: "#"
+    },
+  ];
+
+  let activeSkill = 'All';
+
+  // Render profiles
+  function renderProfiles(profiles) {
+  const container = document.getElementById('profilesContainer');
+  container.innerHTML = '';
+
+  if (profiles.length === 0) {
+    container.innerHTML = '<p style="text-align:center; color:#777;">No profiles found.</p>';
+    return;
+  }
+
+  profiles.forEach(profile => {
+    const profileCard = `
+      <div class="profile-card" data-name="${profile.name}" data-skills="${profile.skills.join(', ')}">
+        <div class="profile-photo" data-description="${profile.description}">
+          <img src="${profile.image}" alt="${profile.name}">
+        </div>
+        <h3 class="student-name">${profile.name}</h3>
+        <p class="aspiring-title">${profile.aspiringTitle}</p>
+        <div class="skills">
+          ${profile.skills.map(skill => `<span>${skill}</span>`).join('')}
+        </div>
+        <a href="${profile.linkedin}" class="linkedin-link" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+        </a>
+      </div>
+    `;
+    container.innerHTML += profileCard;
+  });
+}
+
+
+  // Filter profiles by skill
+  function filterBySkill(skill) {
+    activeSkill = skill;
+    const buttons = document.querySelectorAll('.buttons button');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    filterAndSortProfiles();
+  }
+
+  // Filter and sort profiles
+  function filterAndSortProfiles() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+
+    let filteredProfiles = profilesData.filter(profile => {
+      const name = profile.name.toLowerCase();
+      const skills = profile.skills.map(skill => skill.toLowerCase()).join(', ');
+      const matchesSearch = name.includes(input) || skills.includes(input);
+      const matchesSkill = activeSkill === 'All' || skills.includes(activeSkill.toLowerCase());
+
+      return matchesSearch && matchesSkill;
+    });
+
+    filteredProfiles.sort((a, b) => a.name.localeCompare(b.name));
+
+    renderProfiles(filteredProfiles);
+  }
+
+  // Initial render
+  renderProfiles(profilesData);
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  // Bachelors' Discipline Chart
+  new Chart(document.getElementById('disciplineChart'), {
+    type: 'bar',
+    data: {
+      labels: ['Engineering', 'Science', 'Arts & Humanities', 'Commerce', 'Others'],
+      datasets: [{
+        label: 'Number of Students',
+        data: [12, 5, 4, 3, 6],
+        backgroundColor: 'rgb(1,71,154)'
+      }]
+    }
+  });
+
+  // Work Experience Profile Chart
+  new Chart(document.getElementById('experienceChart'), {
+    type: 'bar',
+    data: {
+      labels: ['Freshers', '1-12 months', '13-24 months', '25-36 months', '37-48 months'],
+      datasets: [{
+        label: 'Number of Students',
+        data: [10, 8, 3, 6, 3],
+        backgroundColor: 'rgb(1,71,154)'
+      }]
+    }
+  });
+
+  // Gender Percentage Pie Chart
+  new Chart(document.getElementById('genderChart'), {
+    type: 'pie',
+    data: {
+      labels: ['Male Students (60%)', 'Female Students (40%)'],
+      datasets: [{
+        data: [18, 12],
+        backgroundColor: ['rgb(1,71,154)','#bfb4b4']
+      }]
+    }
+  });
+</script>
+  
+  <script src="script.js"></script>
+  <script>
+    // Bachelors' Discipline Pie Chart
+    const disciplineCtx = document.getElementById('disciplineChart').getContext('2d');
+    new Chart(disciplineCtx, {
+      type: 'pie',
+      data: {
+        labels: ['Engineering', 'Science', 'Commerce', 'Arts', 'Others'],
+        datasets: [{
+          data: [40, 20, 15, 10, 15],  // Example data
+          backgroundColor: ['#01748E', '#F39C12', '#E74C3C', '#9B59B6', '#2ECC71']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }
+    });
+    
+    // Work Experience Profile Pie Chart
+    const experienceCtx = document.getElementById('experienceChart').getContext('2d');
+    new Chart(experienceCtx, {
+      type: 'pie',
+      data: {
+        labels: ['0-1 Years', '1-3 Years', '3-5 Years', '5+ Years'],
+        datasets: [{
+          data: [25, 35, 20, 20],  // Example data
+          backgroundColor: ['#1ABC9C', '#3498DB', '#9B59B6', '#E74C3C']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }
+    });
+    
+    // Gender Percentage Pie Chart
+    const genderCtx = document.getElementById('genderChart').getContext('2d');
+    new Chart(genderCtx, {
+      type: 'pie',
+      data: {
+        labels: ['Male', 'Female', 'Other'],
+        datasets: [{
+          data: [60, 35, 5],  // Example data
+          backgroundColor: ['#3498DB', '#E74C3C', '#9B59B6']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }
+    });
+    </script>
+    
+
+</body>
+</html>

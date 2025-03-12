@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recruit Our Talent</title>
+  <link rel="stylesheet" href="style_form.css">
+</head>
+<body>
+  <a href="./Index.html" class="back-button">← Back to Home</a>
+  <div class="main-container">
+    <div class="header">
+      
+      <img src="./IIITB_logo_with_Institute_Name_png.png" alt="IIITB Logo" class="logo">
+      <div class="title">
+        <h2>Recruit Our Talent</h2>
+        <p>Connect with IIITB's brightest minds in Digital Product Design & Management</p>
+      </div>
+    </div>
+
+    <form method="post" action="https://script.google.com/macros/s/AKfycbyVzgzb6cSYkB6D5W76LzTCgqeDMST8bzntetCk8Ouko6SSqePNm7mMyPjjD0CUhKcelQ/exec" name="recruitment-form" class="form-container">
+      <div class="input-group">
+        <input type="text" name="companyName" placeholder="Company Name" required>
+        <input type="email" name="businessEmail" placeholder="Business Email" required>
+      </div>
+      <div class="input-group">
+        <input type="text" name="contactPerson" placeholder="Contact Person" required>
+        <input type="tel" name="phoneNumber" placeholder="Phone Number" required>
+      </div>
+      <input type="text" name="positionOffering" placeholder="Position(s) Offering" required>
+
+      <label class="file-upload">Add JD from PDF/Word (Or Enter Manually Below)
+        <input type="file" name="jobFile" accept=".pdf,.doc,.docx">
+      </label>
+      <textarea name="jobDescription" placeholder="Job Description" rows="4"></textarea>
+
+      <div class="input-group">
+        <input type="text" name="jobLocation" placeholder="Job Location" required>
+        <select name="employmentType" required>
+          <option value="" disabled selected>Select Employment Type</option>
+          <option value="Full-Time">Full-Time</option>
+          <option value="Internship">Internship</option>
+          <option value="Part-Time">Part-Time</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <input type="number" name="ctcOffered" placeholder="CTC Offered (LPA)" required>
+        <input type="number" name="graduatesRequired" placeholder="Number of Graduates Required" required>
+      </div>
+
+      <textarea name="additionalInfo" placeholder="Additional Information" rows="4"></textarea>
+      <button type="submit" id="submit-btn">Submit Recruitment Request 🚀</button>
+    </form>
+  </div>
+
+  <script src="script_form.js"></script>
+</body>
+</html>
